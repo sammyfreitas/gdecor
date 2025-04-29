@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GDecor</title>
+
+   <!-- Icones Parte Superior Pagina -->
+   <link rel="icon" href="./imagens/gdecor_log_sup.png" type="image/x-icon">
+	
+   <!-- Link Icones Redes Sociais -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <!-- Link CSS -->
+	<link rel="stylesheet" href="./css/styles.css">
+    
+</head>
+
+<body>
+	<!-- Div superior para redes sociais -->
+	<div id="home" class="redes-sociais" style="background-color: offwhite;">
+        <a href="https://www.instagram.com/gdecor_50/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+	
+	<!-- Div para foto e nome da pessoa -->
+	<div class="foto-e-nome" style="background-color: rgb(250, 195, 215);">
+<img src="./imagens/gdecor_log_sup.png" alt="./imagens/gdecor_log_sup.png">
+		<h1>D'Decor</h1>
+		
+		<marquee behavior="scroll" direction="right" class="marquee">  
+			Sua casa mais bela!
+		</marquee>
+
+	</div>
+	
+	<!-- Div para menu -->
+	<div class="menu" style="background-color: rgb(250, 195, 215);">
+		<ul>
+			<li><a href="#home">Home</a></li>  
+			<li><a href="#Ambientes">Ambientes</a></li>
+			<li><a href="#Mesaposta">Mesa posta</a></li>
+			<li><a href="#Camaebanho">Cama e Banho</a></li>
+			<li><a href="#Cozinha">Cozinha</a></li>
+			<li><a href="#localizacao">Localização</li>
+		</ul>
+	</div>
+	
+	<!-- Div para conteúdo -->
+	
+	<div class="conteudo">
+		<!-- Itens GDecor -->
+    
+		 <div class="menu-container">
+            <h3>Faça seu pedido</h3>
+
+            <body>
+            <div class="grid-container">
+                    <div class="menu-item">
+                        <div class="item-info">
+                        <input type="number" id="boleira_01Qtde" placeholder="Quantidade" />
+                        <label for="boleira_01Qtde"> Boleira </br> (R$80,00) </label>
+                        </div>
+                        <img src="./imagens/boleira_01.png" alt="Boleira">
+                    </div>
+                </div>
+
+            <div class="grid-container">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <label for="bomboniere_01Qtde"> Bomboniere Média </br> (R$30,00) </label>
+                            <input type="number" id="bomboniere_01Qtde" placeholder="Quantidade" />
+                        </div>
+                        <img src="./imagens/bomboniere_01.png" alt="bomboniere_01">
+                    </div>
+                </div>
+
+            <div class="grid-container">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <label for="jarraSuco_01Qtde"> Jarra de Suco </br> (R$50,00) </label>
+                            <input type="number" id="jarraSuco_01Qtde" placeholder="Quantidade" />
+                        </div>
+                        <img src="./imagens/jarraSuco_01" alt="jarraSuco_01">
+                    </div>
+                </div>
+
+            <div class="grid-container">
+                    <div class="menu-item">
+                    <div class="item-info">
+                        <label for="molheira_01Qtde"> Molheira </br> (R$20,00 - cada) </label>
+                        <input type="number" id="molheira_01Qtde" placeholder="Quantidade" />
+                    </div>
+                    <img src="./imagens/molheira_01.png" alt="molheira_01">
+                </div>
+            </div>
+
+
+            <div class="grid-container">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <label for="vasoCristal_01Qtde"> Vaso Cristal </br> (R$30,00) </label>
+                        <input type="number" id="vasoCristal_01Qtde" placeholder="Quantidade" />
+                    </div>
+                    <img src="./imagens/vasoCristal_01.png" alt="vasoCristal_01">
+                </div>
+            </div>
+
+                
+            <div class="grid-container">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <label for="capaAmofada_01Qtde"> Capa Almofada </br>(R$20,00):</label>
+                        <input type="number" id="capaAmofada_01Qtde" placeholder="Quantidade" />
+                    </div>
+                    <img src="./imagens/capaAlmofada_01.png" alt="capaAmofada_01">
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <label for="capaAlmofada_02Qtde">Capa de Almofada linho cru</br> (R$20,00 - cada):</label>
+                        <input type="number" id="capaAlmofada_02Qtde" placeholder="Quantidade" />
+                    </div>
+                    <img src="./imagens/capaAlmofada_02.png" alt="capaAlmofada_02">
+                </div>
+            </div>
+
+                <div class="grid-container">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <label for="capaAlmofada_03Qtde"> Capa de Almofada Algodão Flow </br>(R$20,00 - cada)</label>
+                        <input type="number" id="capaAlmofada_03Qtde" placeholder="Quantidade" />
+                    </div>
+                    <img src="./imagens/capaAlmofada_03.png" alt="capaAlmofada_03">
+                </div>
+            </div>
+
+              </div>
+         
+
+     <!-- Botão para Calcular o Total -->
+            <button onclick="calcularTotal()"> Calcular Preço </button>
+        </div>
+    
+        <!-- Div para Exibir os Itens Calculados e o Total -->
+        <div class="order-summary">
+            <h2>Resumo do seu pedido</h2>
+            <div id="resumoPedido"></div>
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Desenvolvido por <a href="https://github.com/pontesdavila" target="_blank">Dávila Pontes</a>, no Curso de Programador FrontEnd do Senai (2025) com professor Anthony Soares. Todos os direitos reservados
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

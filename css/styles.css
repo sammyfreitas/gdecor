@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Emblema+One&family=Noto+Sans+Warang+Citi&display=swap');
+
+
+
+body {
+	font-family: 'poppins';
+}
+
+img {
+    border-radius: 10%;
+    border: 4px square rgb(82, 51, 129);
+    width: 40%;
+}
+
+a {
+    color: gray;   
+}
+
+a:hover {
+    color: rgb(90, 33, 139);   
+}
+
+/*classes */
+
+.redes-sociais {
+	padding: 40px;
+	text-align: center;
+}
+
+.redes-sociais a {
+    margin-left: 10px; /* Adiciona um espaçamento entre os ícones */
+    font-size: 20px; /* Ajuste conforme necessário */
+    color: gray; /* Cor dos ícones */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.redes-sociais a {
+    margin-left: 20px; /* Adiciona um espaçamento entre os ícones */
+    font-size: 20px; /* Ajuste conforme necessário */
+    color: #7f1ab6; /* Cor dos ícones */
+    text-decoration: none;
+}
+
+.redes-sociais a:visited {
+    color: #555; /* Cor dos links já visitados */
+}
+
+.redes-sociais a:hover {
+    color: #f08cdf; /* Cor quando passa o mouse */
+}
+
+.redes-sociais a:active {
+    color: #7f1ab6; /* Cor quando o link é clicado */
+}
+
+.foto-e-nome {
+	padding: 60px;
+	text-align: center;
+    font-family: 'Doto';    
+}
+
+.marquee {
+    font-family: 'High Tower Text';
+    font-size: 50px;
+    color: Gold;
+    width: 100%;
+    /*background-color: pink;*/
+    background: FloralWhite;
+}
+
+.ordenadaAlfa{
+    list-style-type: lower-alpha;
+}
+
+.ordenadaRomana{
+    list-style-type: lower-roman;
+}
+
+.NOrdenQuadrada{
+    list-style-type:square;
+}
+
+.NOrdenAberta{
+    list-style-type:center;
+}
+
+.menu ul {
+	list-style: none; /* Remove os marcadores da lista */
+	padding: 0;
+	margin: 0;
+	display: flex; /* Usa flexbox para organizar os itens em linha */
+	justify-content: center; /* Centraliza os itens */
+}
+
+.menu li {
+	margin: 0 10px; /* Adiciona espaçamento entre os itens */
+}
+
+.menu a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.conteudo {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaço entre os elementos */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .grid-item {
+    background-color: #eed4f1;
+    padding: 50px;
+    text-align: left;
+    border: 50px solid #eed4f1;
+  }
+  
+
+.texto-principal {
+    width: 70%; /* Define a largura do texto principal */
+    padding: 20px;
+    background-color: rgb(83, 27, 89);
+}
+
+.menu-lateral {
+    width: 20%; /* Define a largura do menu lateral */
+    padding: 10px;
+    background-color: purple;
+}
+
+.item-info{
+    background-color: #eed4f1;
+    padding: 20px;
+    text-align: left;
+    border: 20px solid #eed4f1;
+}
+
+
+.rodape {
+    background-color: DarkSlateBlue; /* Cor de fundo escura */
+    color: #fff; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 15px 0; /* Espaçamento interno */
+    font-size: 7px;
+    position: relative; /* Garante que fique no fluxo normal da página */
+    width: 100%; /* Ocupa toda a largura */
+}
+
+.rodape a {
+    color: MidnightBlue; /* Cor padrão (cinza claro) */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Suaviza a mudança de cor */
+}
+
+.rodape a:visited {
+    color: DarkSlateBlue; /* Cor quando o link já foi clicado */
+}
+
+.rodape a:hover {
+    color: Khaki; /* Cor ao passar o mouse */
+}
+
+.rodape a:active {
+    color: MidnightBlue; /* Cor do link ativo (cinza escuro) */
+}
